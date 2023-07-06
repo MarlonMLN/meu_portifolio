@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+form div {
+    background: #fff;
+    border: 0;
+    border-bottom: 1px solid #6006f0;
+    margin: 5px 10px 5px 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+[type="text"], [type="email"], textarea {
+    display: block;
+    width: 100%;
+}
+
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+nav {
+    float: left;
+    background: #DCDCDC;
+    padding: 20px;
+    width: 30%;
+    height: 300;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    background-color: #FFFAF0;
+    padding: 20px;
+    width: 70%;
+    height: 300;
+    color: #000;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}

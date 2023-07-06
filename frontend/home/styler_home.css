@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&family=Questrial&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: #e7dddd;
+  overflow: hidden;
+}
+
+/* .background{
+  background-size: cover;
+  background-position: center;
+} */
+
+
+/*CONTROLES DE NAVEGAÇÃO ENTRE PAGINAS-------------------------*/
+
+header{
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem; 
+}
+
+.logo i {
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border: 1px solid #2b2e3a; 
+  color: #2b2e3a; 
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* .logo i:hover {
+  border-color: #f00640;
+  color: #f00640;
+  transition: all .3s ease-in-out 0s;
+} */
+
+.container {
+  font-family:Arial, Helvetica, sans-serif ;
+  font-size: 15px;
+}
+
+.controls ul {
+  display: table;
+  margin: 10px auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.controls ul li {
+  display: inline;
+  margin: 12px;
+}
+
+.controls ul li a {
+  font-weight: bold;   /* TEXTO EM NEGRITO */
+  color:#2b2e3a; 
+}
+
+.controls ul li a:hover {
+  font-weight: bold;
+  color: #f00640;
+  transition: 0.3s all;
+}
+
+/*QUEM SOU EU. BREVE COMENTARIO--------------------------------*/
+
+/* .contents-m {
+  border: 1px solid #f00640;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: left;
+  height: 100%;
+  text-align: left;
+  min-width: 60px;
+  max-width: 650px;
+  margin-left: 20%;
+  padding-top: 150px 0 0 130px;
+  position:static; 
+} */
+
+
+.contents-m {
+  border: 1px solid #f00640;
+  padding: 350px 0 0 200px;
+}
+
+/* display: flex;
+  justify-content: center;
+  align-items: flex-end; // Alinha os ícones na parte inferior
+  position: fixed; */
+
+.content p { 
+  min-width: 50px;
+  max-width: 600px;
+  word-wrap: break-word;
+  padding: 10px 10px;
+  color:#2b2e3a;
+  text-align: left;
+  
+}
+
+h2 {
+  
+  font-size: 12px;
+  width: 100px;  
+  padding: 5px 10px;
+  color:#2b2e3a;
+  text-align: left;
+}
+
+/* hr {
+  font-size: 12px;
+  width: 100px;  
+  color:#2b2e3a;
+  text-align: left;
+  display: inline-block;
+  
+} */
+
+h1 {
+  display: inline-block;
+  padding: 5px 10px;
+  color:#2b2e3a;
+  text-align: left;
+  min-width: 50px;
+  max-width: 600px;
+  
+}
+
+h1 span {
+  color:#f00640;
+} 
+
+/*CLINK DE DOWLOAD---------------------------------------------*/
+
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;/*posição na tela*/
+  display: flex;
+}
+
+.button {
+  min-height: 25px;
+  font-family: 'poppins', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #f00640;
+  border: none;
+  border-radius: .5ch;
+  box-shadow: 6px 6px 14px #8c8f9a;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+  content: '';
+  border-radius: 1ch;
+  min-width: calc(140px + 5px);
+  min-height: calc(48px + 5px);
+  border: 2px solid #f00640;
+  box-shadow: 0 0 2cqi #f00640;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  background: #2b2e3a;
+  color: white;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+/*MINHAS REDES-------------------------------------------------*/
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Alinha os ícones na parte inferior */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.redes .contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes .contact-icon a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.redes .contact-icon a:hover {
+  color: #f00640;
+  transition: all .3s ease-in-out 0s;
+}
+.contact-icon a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #000;
+  text-decoration: none;
+}
+.contact-icon a i {
+  font-size: 24px; /* Defina o tamanho desejado */
+}
+
+
+

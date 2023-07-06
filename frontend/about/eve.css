@@ -1,0 +1,85 @@
+
+
+.eve {
+    animation-name: up;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  
+  .shadow {
+    animation-name: shadow;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  
+  .arm-left {
+    animation-name: arm-left;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  
+  .arm-right {
+    animation-name: arm-right;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  
+  .eye-left {
+    animation-name: eye-left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  
+  .eye-right {
+    animation-name: eye-right;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+  }
+  
+  @keyframes up {
+    100% {
+      transform: translateY(-25px);
+    }
+  }
+  
+  @keyframes shadow {
+      100% {
+      transform: scaleX(1.2);
+    }
+  }
+  
+  @keyframes arm-left {
+      100% {
+      transform: rotate(25deg);
+    }
+  }
+  
+  @keyframes arm-right {
+      100% {
+      transform: rotate(-25deg);
+    }
+  }
+  
+  @keyframes eye-left {
+      100% {
+      transform: rotate(-22deg);
+    }
+  }
+  
+  @keyframes eye-right {
+    100% {
+      transform: rotate(22deg);
+    }
+  }

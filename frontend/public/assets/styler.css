@@ -1,0 +1,127 @@
+body {
+    background: #eaf1fa;
+  }
+      
+  .container {
+    
+    padding: 30%;
+  }
+  
+  .content {
+    margin: 100%x;
+    padding: 30%;
+  }
+  .controls {
+    position: fixed;
+    top: 3%;
+    right: center;
+    transform: translateY(-50%);
+  }
+  
+  .navegacao-primaria {
+    list-style-type:none;
+    float: center;
+    
+  }
+  
+  .navegacao-primaria li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .navegacao-primaria li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navegacao-primaria li a:hover {
+    color: #d22650;
+  }
+
+  /* Estilos para a classe .controls */
+.controls {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .controls .navegacao-primaria {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .controls .navegacao-primaria li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .controls .navegacao-primaria li:last-child {
+    margin-right: 0;
+  }
+  
+  .controls .navegacao-primaria li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .controls .navegacao-primaria li a:hover {
+    color: green;
+  }
+  
+  /* Estilos para a classe .content */
+  .content {
+    margin-top: 100px;
+  }
+  
+  .content h1 {
+    font-size: 24px;
+  }
+  
+  .content h1 span {
+    color: blue;
+  }
+  
+  /* Estilos para a classe .redes */
+  .redes {
+    margin-top: 20px;
+  }
+  
+  .redes .contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .redes .contact-icon a {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .redes .contact-icon a:hover {
+    color: green;
+  }
+  
+  /* Estilos para a classe .dowload */
+  .dowload {
+    margin-top: 20px;
+  }
+  
+  .dowload a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dowload a:hover {
+    background-color: green;
+  }
+  
